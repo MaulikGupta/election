@@ -10,7 +10,7 @@ contract Election {
 
   mapping(uint => Candidate) public candidates;
 
-  uint public candidatesCount; //no way to iterate in map
+  uint public candidatesCount = 0; //no way to iterate in map
   constructor() public{
     addCandidate("Candidate 1");
     addCandidate("Candidate 2");
