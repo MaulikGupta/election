@@ -1,0 +1,15 @@
+truffle migrate --reset
+truffle console
+Election.deployed().then(function(i) {app=i})
+app.candidates(1,2)
+app.address
+
+app.candidates(1).then(function(c) {candidate=c})
+candidate    >>>  'Candidate 1'
+candidate[0]
+candidate[0].toNumber()
+
+
+web3.eth
+// web3.eth.accounts
+truffle(development)> web3.eth.getAccounts()
