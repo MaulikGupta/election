@@ -13,5 +13,7 @@ candidate[0].toNumber()
 web3.eth
 // web3.eth.accounts
 truffle(development)> web3.eth.getAccounts()
-
+    web3.eth.getAccounts().then(function(z){Acc=z})
+    Acc[0]
+    Acc[1]
 truffle test
