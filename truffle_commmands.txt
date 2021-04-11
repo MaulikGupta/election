@@ -19,6 +19,6 @@ truffle(development)> web3.eth.getAccounts()
 truffle test
 
 
-after trufflu :-
+after truffle :-
     to open lite-server
         npm run dev
