@@ -12,8 +12,11 @@ contract Election {
 
   uint public candidatesCount = 0; //no way to iterate in map
   constructor() public{
-    addCandidate("Candidate 1");
-    addCandidate("Candidate 2");
+    addCandidate("Maulik Gupta");
+    addCandidate("Shivansh Sharma");
+    addCandidate("Aditya Raj");
+    addCandidate("Adhinayak Anand");
+    addCandidate("Divjot Singh Oberoi");
   }
 
   function addCandidate(string memory _name) private{
