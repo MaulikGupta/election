@@ -22,3 +22,11 @@ truffle test
 after truffle :-
     to open lite-server
         npm run dev
+
+
+
+to check our vote function --> 
+    truffle console
+    Election.deployed().then(function(i){app=i})
+    web3.eth.getAccounts()            #to get all accounts
+    app.vote(1, { from:web3.eth.accounts[0] })      # 1 is the _candidateId and additionally solidity allows passing some metadata(containing information like account address)      # method does not work --> try method illustrated on line 14          

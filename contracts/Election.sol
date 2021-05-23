@@ -8,8 +8,12 @@ contract Election {
     uint voteCount;
   }
 
+  // store accounts that have voted
+  mapping(address => bool) public voters;
+  // store candidates
+  // fetch candidates
   mapping(uint => Candidate) public candidates;
-
+  // store candidate count
   uint public candidatesCount = 0; //no way to iterate in map
   constructor() public{
     addCandidate("Maulik Gupta");
@@ -26,7 +30,7 @@ contract Election {
 
   function vote(uint _candidateId) public{
     // record that voter has voted
-    
+    voters[msg.sender] = true;
 
     // update candidate vote count
     candidates[_candidateId].voteCount ++;
